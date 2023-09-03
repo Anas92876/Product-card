@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size:10px;
+}
+.Blogs{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax( 25rem , 25rem));
+    place-content: center ;
+    gap: 10rem;
+    
+}
+.Blog__content{
+    display: grid;
+     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.495);
+     border-radius: 1.2rem;
+     padding: 2rem;
+     gap: 1.4rem;
+}
+.Blog__content--title h2{
+    font-size: 2rem;
+}
+.Blog__content--title p{
+    color: rgb(79, 72, 72);
+    font-size: 1.2rem;
+}
+.Blog__content--title{
+    display: grid;
+    gap: 0.6rem;
+}
+.Blog__content--price h2{
+    font-size: 2rem;
+}
+.Blog__content--price{
+    display: grid;
+    gap: 0.6rem;
+}
+.Blog__content--price-double{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.crossed-price{
+    color: gray;
+    text-decoration: line-through 1.5px solid gray;
+}
+.Blog__content--price p{
+    font-size: 1.5rem;
+}
+.Blog__content--price a{
+    color: white;
+    background-color: rgb(19, 19, 79);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+#current{
+    background-color: rgb(51, 51, 221);
+}
+.Blog__content--features ul{
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+.Blog__content--features li{
+    font-size: 1.3rem;
+    color: grey;
+}
+.fa-check{
+    color: rgb(29, 249, 29);
+    margin-right: 2rem;
+}
+.fa-xmark{
+    color: rgb(230, 66, 66);
+    margin-right: 2rem;
+}
